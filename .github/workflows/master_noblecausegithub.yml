@@ -61,4 +61,4 @@ jobs:
           app-name: 'NobleCauseGithub'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FC0799BD6AFA4655B6FD3A32C61F59E8 }}
-          package: .
+          package: release.zip
