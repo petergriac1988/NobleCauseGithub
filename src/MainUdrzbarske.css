@@ -1,0 +1,249 @@
+.container {
+    width: 80%;
+    max-width: 1200px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-direction: column;
+    /*background-color: green;*/
+    position: relative;
+    top: 0;
+    /* aligns the container to the top of the viewport */
+    left: 50%;
+    /* centers the container horizontally */
+    transform: translateX(-50%);
+    /* shifts the container leftwards by half of its width */
+    margin-top: 30px;
+    /* add space at the top */
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+
+.container select {
+    /*toto je padding pre drowpdony aby sa lepsie citali*/
+    width: 100%;
+    padding: 0 5px;
+}
+
+.container checkbox-item {
+    /*toto je padding pre drowpdony aby sa lepsie citali*/
+    width: 100%;
+    padding: 0 5px;
+}
+
+.SekciaHlavicka {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 150px;
+    /*margin-left: 20px;*/
+    font-size: 22px;
+    /* margin-top: 50px;*/
+}
+
+.SekciaHlavicka>* {
+    /*tomuto uplne nechapem preco som to nemohol dat do toho horneho komponentu */
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+.hlavicka-title {
+    grid-column: span 2; /* makes it span 2 columns */
+}
+
+.UdajeRequestor {
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.UdajeRequestor input {
+    /* Toto tu je aby som zabezpecil ze tie inputy su cierne a neni ich vidno */
+    background-color: black;
+    color: white;
+    border: none;
+
+}
+
+/*---------------------------------------- Typ Poziadavky --------------------------------------*/
+.containerTypPoziadavky,
+.InformacieUzivatelContainer {
+    /*tento container tam mozno nemusi byt */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SekciaTypPoziadavky,
+.SekciaZakladneInformacie,
+.SekciaUdajeONehnutelnost {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+    color: black;
+    height: 30px;
+    font-size: 16px;
+    font-style: italic;
+    /* This will make the text italic */
+    font-weight: bold;
+    /* This will make the text bold */
+}
+
+
+.SekciaUserControlPanel,
+.SekciaOstatnePoziadavkyNaOhodnotenie,
+.SekciaOstatnePoziadavkyNaPrehodnotenieDlznik,
+.SekciaOstatnePoziadavkyNaPrehodnotenieVlastnik,
+.SekciaHistoria {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 30px;
+    font-size: 16px;
+    font-style: italic;
+    /* This will make the text italic */
+    font-weight: bold;
+    /* This will make the text bold */
+}
+
+.SekciaTypPoziadavky>*,
+.SekciaZakladneInformacie>*,
+.SekciaUserControlPanel>*,
+.SekciaUdajeONehnutelnost>*,
+.SekciaOstatnePoziadavkyNaOhodnotenie>*,
+.SekciaOstatnePoziadavkyNaPrehodnotenieDlznik>*,
+.SekciaOstatnePoziadavkyNaPrehodnotenieVlastnik>*,
+.SekciaHistoria>*,
+.InformacieUzivatel>* {
+    /*tomuto uplne nechapem preco som to nemohol dat do toho horneho komponentu */
+    margin-left: 10px;
+}
+
+.SekciaTypPoziadavkyPolia,
+.SekciaZakladneInformaciePolia,
+.UdajeONehnutelnostiPolia,
+.SekciaUserControlPanelPolia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-style: italic;
+    /* This will make the text italic */
+    /* font-weight: bold; /* This will make the text bold */
+    margin-bottom: 5px
+}
+
+.SekciaTypPoziadavkyPolia,
+.SekciaZakladneInformaciePolia,
+.UdajeONehnutelnostiPolia,
+.SekciaUserControlPanelPolia label,
+.InformacieUzivatelPolia {
+    font-weight: bold;
+}
+
+.SekciaTypPoziadavkyPolia>*,
+.SekciaZakladneInformaciePolia>*,
+.UdajeONehnutelnostiPolia>*,
+.SekciaUserControlPanelPolia>*,
+.InformacieUzivatelPolia>* {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 22px;
+}
+
+/* ------------------------- !!!! Toto musim vymysliet ako spravit ------------------------------------------*/
+
+.SekciaTypPoziadavkyPolia select,
+.SekciaZakladneInformaciePolia select,
+.UdajeONehnutelnostiPolia select,
+.SekciaUserControlPanelPolia select {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.asset-subtype-select {
+    grid-column: span 2;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+.InformacieUzivatel {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: rgb(194, 191, 191);
+    color: white;
+    height: 30px;
+    font-size: 16px;
+    font-style: italic;
+    /* This will make the text italic */
+    font-weight: bold;
+    /* This will make the text bold */
+}
+
+.InformacieUzivatelPolia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    background-color: white;
+    color: rgb(194, 191, 191);
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px
+}
+
+.PovinnePolia {
+    color: red;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+/*-------------------------------------------Nastavenie Buttonov ---------------------------------------*/
+
+
+.SekciaUserControlPanelButtons {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.ButtonStyle button {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 15px 32px; /* Size of the button */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px; /* Text size */
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Transition effect */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 12px; /* Round corners */
+    border: none; /* No border */
+}
+
+.ButtonStyle button:hover {
+    background-color: #808080; /* Gray background */
+    color: #FFFFFF; /* White text */
+}
